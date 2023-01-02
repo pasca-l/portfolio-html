@@ -1,8 +1,125 @@
 <!DOCTYPE html>
-<html>
-  <head></head>
-
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script>
+      $(function () {
+        $("html,body").animate({ scrollTop: 0 }, "1");
+      });
+    </script>
+    <title>Document</title>
+  </head>
   <body>
-    Portfolio!
+    <header>
+      <nav>
+        <ul class="top">
+          <li><a href="">Top</a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <img src="./img/cat0094-066.jpg" alt="Top Image..." class="top_image" />
+
+    <div class="textbody">
+      <div id="education" class="anchor">
+        <h1>Education</h1>
+        <div class="content">
+          <p class="title">Keio University</p>
+          <p class="inline_date">April 2022 - Present</p>
+          <p class="description">Master's, Integrated Design Engineering</p>
+          <p class="detail">Aoki Laboratory</p>
+        </div>
+        <div class="content">
+          <p class="title">Keio University</p>
+          <p class="inline_date">April 2018 - March 2022</p>
+          <p class="description">
+            Bachelor, Electronic and Information Engineering
+          </p>
+          <p class="detail">Okada Laboratory</p>
+        </div>
+        <div class="content">
+          <p class="title">International School of Stuttgart</p>
+          <p class="inline_date">September 2015 - May 2017</p>
+          <p class="description">
+            International Baccalaureate, High School Diploma
+          </p>
+        </div>
+      </div>
+
+      <div id="certification" class="anchor">
+        <h1>Certification</h1>
+        <div class="content">
+          <p class="title">
+            CG-ARTS: Image Processing Certification Test (Expert)
+          </p>
+          <p class="inline_date">July 2021</p>
+          <p class="description"></p>
+          <p class="detail"></p>
+        </div>
+        <div class="content">
+          <p class="title">JDLA Deep Learning for GENERAL</p>
+          <p class="inline_date">July 2020</p>
+          <p class="description"></p>
+          <p class="detail"></p>
+        </div>
+        <div class="content">
+          <p class="title">Python 3 Certified Engineer Basic Examination</p>
+          <p class="inline_date">August 2019</p>
+          <p class="description"></p>
+          <p class="detail"></p>
+        </div>
+        <div class="content">
+          <p class="title">Cambridge English: Advanced</p>
+          <p class="inline_date">August 2016</p>
+          <p class="description"></p>
+          <p class="detail"></p>
+        </div>
+      </div>
+
+      <div id="experience" class="anchor">
+        <h1>Experience</h1>
+        <div class="content">
+          <p class="title">KADOKAWA DWANGO educational institute</p>
+          <p class="inline_date">October 2020 - March 2022</p>
+          <p class="description">Programming Teacher's Assistant</p>
+          <p class="detail">Worked as</p>
+        </div>
+      </div>
+
+      <div id="works" class="anchor">
+        <h1>Works</h1>
+        <div class="content">
+          <p class="title">Portfolio</p>
+          <p class="description">My portfolio website!! (This page)</p>
+          <p class="detail">HTML, CSS</p>
+        </div>
+        <div class="content">
+          <p class="title">Light Propagation Simulation</p>
+          <p class="description">
+            Montecarlo simulation for infrared brain function measurement, with
+            data processing scripts!!
+          </p>
+          <p class="detail">C, Python</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Copyright &copy; 2023, Developed by
+        <a href="https://github.com/pasca-l">Shion Yamadate</a>
+      </p>
+    </footer>
   </body>
 </html>

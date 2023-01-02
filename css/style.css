@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 30px 0 0 0;
+  animation-name: fadeinAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeinAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.anchor {
+  display: block;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+h1 {
+  border-bottom: 1px solid grey;
+}
+
+header {
+  font-size: 18px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  background: #c0c0c0;
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  animation-name: fadeupAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+}
+@keyframes fadeupAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top_image {
+  text-align: center;
+  width: 90%;
+}
+
+.textbody {
+  /* font-family: "Times New Roman", Times, serif; */
+  width: 55%;
+  margin: 10px auto;
+}
+
+.content {
+  margin: 20px auto;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.detail {
+  font-size: 14px;
+  color: grey;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid grey;
+  /* background: red; */
+}
