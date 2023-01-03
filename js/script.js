@@ -1,26 +1,28 @@
 "use strict";
 
 (function ($) {
+  const $menu = $('.menu');
+  const menuWidth = $menu.width();
 
   $(window).on('load resize', function(){
     const windowWidth = $(window).width();
-    const $menu = $('.menu');
     const $hamburger = $('.hamburger');
-    const $textbody = $("[class^='textbody'")
-    
-    if (windowWidth <= 720) {
-      $textbody.addClass('textbody_mobile');
-      $textbody.removeClass('textbody');
+    const $textbody = $('.textbody');
 
+    if (menuWidth >= windowWidth * 0.7) {
       $menu.addClass('hide');
       $hamburger.removeClass('hide');
     }
     else {
-      $textbody.addClass('textbody');
-      $textbody.removeClass('textbody_mobile');
-
       $menu.removeClass('hide');
       $hamburger.addClass('hide');
+    }
+
+    if (windowWidth <= 510) {
+      $textbody.width(280);
+    }
+    else {
+      $textbody.width("55%");
     }
   })
   

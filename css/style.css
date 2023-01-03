@@ -101,22 +101,21 @@ nav .hamburger {
   text-align: center;
 }
 .top_image p {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bolder;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   -webkit-text-stroke: 1px grey;
 }
+.top_image_margin {
+  font-size: 50px;
+}
 
 .textbody {
   width: 55%;
-  margin: 10px auto;
-}
-.textbody_mobile {
-  width: 60%;
   margin: 10px auto;
 }
 
