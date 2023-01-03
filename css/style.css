@@ -9,7 +9,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   animation-name: fadeinAnime;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -116,23 +116,34 @@ nav .hamburger {
 
 .textbody {
   width: 55%;
-  margin: 10px auto;
+  margin: 0 auto;
+}
+.section {
+  margin: 20px auto;
 }
 
 .content {
   margin: 20px auto;
 }
-.title {
+.work {
   display: flex;
   justify-content: space-between;
 }
-.title p {
+.title {
   font-size: 18px;
   font-weight: bold;
+}
+.inline_date {
+  font-size: 15px;
+  font-style: italic;
+}
+.description {
+  margin-left: 10px;
 }
 .detail {
   font-size: 14px;
   color: grey;
+  margin-left: 10px;
 }
 
 .icons {
@@ -140,7 +151,7 @@ nav .hamburger {
   margin: auto 0;
 }
 .icons a {
-  margin: 0 2px;
+  margin: 0 3px;
   /* background: red; */
 }
 .icons img {
