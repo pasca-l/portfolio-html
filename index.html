@@ -7,11 +7,6 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <script>
-      $(function () {
-        $("html,body").animate({ scrollTop: 0 }, "1");
-      });
-    </script>
     <title>Document</title>
   </head>
   <body>
@@ -26,6 +21,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#works">Works</a></li>
         </ul>
+        <p class="hamburger hide">Hamburger</p>
       </nav>
     </header>
 
@@ -108,12 +104,29 @@
       <div id="works" class="anchor">
         <h1>Works</h1>
         <div class="content">
-          <p class="title">Portfolio</p>
+          <div class="title">
+            <p>Portfolio</p>
+            <div class="icons">
+              <a href="https://github.com/pasca-l/portfolio" class="github">
+                <img src="./img/github-mark.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
           <p class="description">My portfolio website!! (This page)</p>
           <p class="detail">HTML, CSS</p>
         </div>
         <div class="content">
-          <p class="title">Light Propagation Simulator</p>
+          <div class="title">
+            <p>Light Propagation Simulator</p>
+            <div class="icons">
+              <a
+                href="https://github.com/pasca-l/light-propagation-simulator"
+                class="github"
+              >
+                <img src="./img/github-mark.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
           <p class="description">
             Montecarlo simulation for functional Near-Infrared Spectroscopy
             (fNIRS), with data processing scripts!!
@@ -121,26 +134,72 @@
           <p class="detail">C, Python</p>
         </div>
         <div class="content">
-          <p class="title">Allergy Estimation</p>
+          <div class="title">
+            <p>Allergy Estimation</p>
+            <div class="icons">
+              <a
+                href="https://github.com/pasca-l/allergy-estimation"
+                class="github"
+              >
+                <img src="./img/github-mark.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
           <p class="description">
             Inferencing allergy from a given food image!!
           </p>
           <p class="detail">Python (PyTorch)</p>
         </div>
         <div class="content">
-          <p class="title">NBA Database</p>
+          <div class="title">
+            <p>NBA Database</p>
+            <div class="icons">
+              <a
+                href="https://pasca-l.github.io/nba-database/index.html"
+                class="website"
+              >
+                <img src="./img/link-thin.svg" alt="GitHub" />
+              </a>
+              <a href="https://github.com/pasca-l/nba-database" class="github">
+                <img src="./img/github-mark.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
           <p class="description">Website to present NBA data!!</p>
           <p class="detail">SuperSQL, Python</p>
         </div>
         <div class="content">
-          <p class="title">Coin Website (still in progress...)</p>
+          <div class="title">
+            <p>
+              <span class="avoidwrap">Coin Website</span
+              ><span class="avoidwrap"> (still in progress...)</span>
+            </p>
+            <div class="icons">
+              <a href="https://github.com/pasca-l/coin-website" class="github">
+                <img src="./img/github-mark.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
           <p class="description">
             Website to record collected commemorative coins!!
           </p>
           <p class="detail">TypeScript (Next.js), CSS, Python, Docker</p>
         </div>
         <div class="content">
-          <p class="title">Simple Chat App (still in progress...)</p>
+          <div class="title">
+            <p>
+              <span class="avoidwrap">Simple Chat App</span
+              ><span class="avoidwrap"> (still in progress...)</span>
+            </p>
+            <div class="icons">
+              <a
+                href="https://github.com/pasca-l/simple-chat-app"
+                class="github"
+              >
+                <img src="./img/github-mark.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
           <p class="description">A simple chat application!!</p>
           <p class="detail">Dart (Flutter)</p>
         </div>
@@ -153,5 +212,13 @@
         <a href="https://github.com/pasca-l">Shion Yamadate</a>
       </p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      $(function () {
+        $("html,body").animate({ scrollTop: 0 }, "1");
+      });
+    </script>
   </body>
 </html>

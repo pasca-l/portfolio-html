@@ -8,7 +8,6 @@
 body {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
-  /* padding: 30px 0 0 0; */
   animation-name: fadeinAnime;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
@@ -23,14 +22,21 @@ body {
   }
 }
 
+span.avoidwrap {
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  text-decoration: underline;
+}
 .anchor {
   display: block;
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 h1 {
@@ -74,7 +80,21 @@ nav ul li {
     transform: translateY(0);
   }
 }
+nav .hamburger {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+}
 
+.hide {
+  display: none !important;
+}
+
+.top_image {
+  position: relative;
+  z-index: -1;
+  margin-bottom: 30px;
+}
 .top_image img {
   width: 100vw;
   height: 55vw;
@@ -88,11 +108,15 @@ nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  -webkit-text-stroke: 1px grey;
 }
 
 .textbody {
-  /* font-family: "Times New Roman", Times, serif; */
   width: 55%;
+  margin: 10px auto;
+}
+.textbody_mobile {
+  width: 60%;
   margin: 10px auto;
 }
 
@@ -100,6 +124,10 @@ nav ul li {
   margin: 20px auto;
 }
 .title {
+  display: flex;
+  justify-content: space-between;
+}
+.title p {
   font-size: 18px;
   font-weight: bold;
 }
@@ -108,11 +136,27 @@ nav ul li {
   color: grey;
 }
 
+.icons {
+  display: flex;
+  margin: auto 0;
+}
+.icons a {
+  margin: 0 2px;
+  /* background: red; */
+}
+.icons img {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+.icons img:hover {
+  opacity: 0.6;
+}
+
 footer {
   width: 100%;
   padding: 20px 0;
   font-size: 12px;
   text-align: center;
   border-top: 1px solid grey;
-  /* background: red; */
 }
