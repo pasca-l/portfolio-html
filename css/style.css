@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+}
+
+a {
+  & {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  & {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .icon {
+    & {
+      margin: auto 2px;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+
+    img:hover {
+      opacity: 0.65;
+    }
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+
+    li {
+      padding: 0 16px;
+    }
+  }
+}
+
+.section {
+  & {
+    min-width: 100vw;
+    /* height of scroll-margin-top is deducted from full screen height */
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:not(#home) {
+    margin-top: 200px;
+    scroll-margin-top: 100px;
+  }
+
+  .title {
+    font-size: 3rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  /* adding divider around section title */
+  .title::before,
+  .title::after {
+    margin: 0 20px;
+    flex: 1;
+    content: "";
+    border-bottom: 1px solid black;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    margin: 20px;
+  }
+
+  .content {
+    min-height: 60vh;
+    width: 60vw;
+  }
+}
+
+.home-title {
+  font-size: 4.5rem;
+  text-align: center;
+}
+.home-subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.timeline-item {
+  /* adding a base line of timeline */
+  & {
+    padding: 48px 0 32px 32px;
+    position: relative;
+    border-left: 2px solid black;
+  }
+
+  &:first-child {
+    border-image: linear-gradient(to bottom, grey, black) 1;
+  }
+  &:last-child {
+    border-image: linear-gradient(to bottom, black, white) 1;
+  }
+
+  /* adding date next to circle */
+  &::before {
+    content: attr(date-on);
+    color: grey;
+    position: absolute;
+    top: 16px;
+    left: 32px;
+  }
+
+  /* adding a circle for the point in time */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .timeline-content {
+    margin-top: 10px;
+    color: grey;
+  }
+
+  .item-links {
+    & {
+      margin: auto 2px;
+      display: flex;
+      gap: 5px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+    }
+
+    img:hover {
+      opacity: 0.65;
+    }
+  }
+}
+
+.items {
+  & {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .item-title {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .item-content {
+    margin: 10px 0;
+    padding: 0 0 0 20px;
+    border-left: 0.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .item-detail {
+    margin: 20px 0 0 0;
+    padding-top: 10px;
+    color: grey;
+    border-top: 0.5px solid grey;
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-links {
+    & {
+      margin: auto 2px;
+      display: flex;
+      gap: 5px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+    }
+
+    img:hover {
+      opacity: 0.65;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
