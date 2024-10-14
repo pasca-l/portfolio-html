@@ -96,7 +96,7 @@ header {
 
   .subtitle {
     font-size: 1.3rem;
-    margin: 20px;
+    padding: 20px;
   }
 
   .content {
@@ -114,6 +114,11 @@ header {
   text-align: center;
 }
 
+.timeline {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .timeline-item {
   /* adding a base line of timeline */
   & {
