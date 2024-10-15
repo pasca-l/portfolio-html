@@ -82,7 +82,7 @@ header {
     width: 70%;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   /* adding divider around section title */
@@ -193,6 +193,11 @@ header {
     gap: 30px;
   }
 
+  .item {
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 0 rgb(0 0 0 / 0.3);
+  }
   .item-title {
     font-size: 1.2rem;
     padding: 5px 0;
